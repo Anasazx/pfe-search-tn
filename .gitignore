@@ -1,0 +1,9 @@
+# personal data: never commit
+me/
+data/
+output/
+
+__pycache__/
+*.pyc
+.DS_Store
+.venv/

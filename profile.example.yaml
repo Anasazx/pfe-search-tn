@@ -1,0 +1,43 @@
+# Copy to me/profile.yaml (`python -m pfe init`) or let `/setup` in Claude Code fill it from your CV.
+# me/ is gitignored: your personal data never gets committed.
+
+name: Prénom Nom
+email: prenom.nom@example.com
+phone: "+216 00 000 000"
+links: [linkedin.com/in/votre-profil, github.com/votre-compte]
+cv: cv.pdf                      # path relative to me/
+
+# licence | ingenieur | master  (offers reserved for other levels are hidden unless --all-levels)
+level: licence
+
+# First sentence of every email. Write it the way you want to be introduced.
+intro: Étudiant en dernière année de Licence en Développement des Systèmes Informatiques à l’ISET de Exemple
+
+# Domains you want (pfebooks slugs). Empty = all.
+#   informatique-ia-data, dev-web-mobile-design-ux-ui, systemes-reseaux-cloud,
+#   industrie-ing-btp, business-marketing-rh, durabilite-technologie-verte
+categories: [informatique-ia-data, dev-web-mobile-design-ux-ui, systemes-reseaux-cloud]
+
+# Cities you'd accept (substring match on the offer location). Empty = anywhere.
+locations: []
+
+# Skills you can defend in an interview. weight 1-3 = how central it is to you (default 2).
+# Names are matched with the built-in catalog in pfe/skills.py; add `match: "regex"` for anything custom.
+skills:
+  - {name: Java, weight: 3}
+  - {name: Spring Boot, weight: 3}
+  - {name: Angular, weight: 3}
+  - {name: Python, weight: 2}
+  - {name: PostgreSQL, weight: 2}
+  - {name: REST API, weight: 2}
+  - {name: Docker, weight: 1}
+  - {name: Git, weight: 1}
+
+# Proof points the template email cites, picked by overlap with the offer.
+# Write each as a French clause that follows "Ce sujet correspond directement à mon parcours : ..."
+# Facts only: these go to recruiters.
+highlights:
+  - skills: [Java, Spring Boot, PostgreSQL, REST API]
+    text: lors de mon stage chez Exemple SARL, j’ai développé une API REST en Spring Boot avec PostgreSQL
+  - skills: [Angular]
+    text: j’ai réalisé le frontend Angular d’une application de gestion de réservations
