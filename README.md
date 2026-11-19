@@ -11,7 +11,7 @@ Every year Tunisian companies publish hundreds of PFE subjects in their "PFE Boo
 ## Quick start (free core)
 
 ```bash
-git clone <this repo> && cd pfe-search-tn
+git clone https://github.com/Anasazx/pfe-search-tn.git && cd pfe-search-tn
 pip install -r requirements.txt
 
 python -m pfe init                 # creates me/profile.yaml
